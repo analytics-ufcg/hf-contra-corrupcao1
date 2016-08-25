@@ -5,7 +5,7 @@ title: Hackfest Contra a Corrupção.
 description: "Sobre o 1o Hackfest Contra a Corrupção organizado pela UFCG, MPE-PB e Rede Paraíba."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "/hf-contra-corrupcao1/" #important: start with /
-url: "https://analytics-ufcg.github.io"
+url: http://analytics-ufcg.github.io
 github_username:  analytics-ufcg
 
 # Build settings
