@@ -10,6 +10,7 @@ Title: Informações dos projetos
 
 *código:* https://github.com/antonioricardojr/vereador
 
+<img src="screenshots/oquefazumvereador1.png" width="200">
 ![screenshot](./screenshots/oquefazumvereador1.png =250x)
 ![screenshot](./screenshots/oquefazumvereador2.png =250x)
 ![screenshot](./screenshots/oquefazumvereador1.png =250x)
