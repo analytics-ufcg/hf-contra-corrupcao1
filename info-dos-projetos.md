@@ -8,12 +8,12 @@ Clique nas figuras para ver os screenshots maiores. E lembre que são as versõe
 
 Quantos comissionados cabem em um metro quadrado?
 
-*site:* Em construção.
+*site:* https://analytics-ufcg.github.io/enquadrados/
 
 *código:* https://github.com/analytics-ufcg/enquadrados/
 
-<img src="screenshots/enquadrados1.png" width="300">
-<img src="screenshots/enquadrados2.png" width="300">
+<img src="screenshots/enquadrados1.png" width="320">
+<img src="screenshots/enquadrados2.png" width="320">
 
 ---
 
@@ -25,9 +25,9 @@ O que a Câmara Municipal de Campina Grande discute e aprova? *O que faz um vere
 
 *código:* https://github.com/antonioricardojr/vereador
 
-<img src="screenshots/oquefazumvereador1.png" width="200">
-<img src="screenshots/oquefazumvereador2.png" width="200">
-<img src="screenshots/oquefazumvereador3.png" width="200">
+<img src="screenshots/oquefazumvereador1.png" width="220">
+<img src="screenshots/oquefazumvereador2.png" width="220">
+<img src="screenshots/oquefazumvereador3.png" width="220">
 
 ---
 
