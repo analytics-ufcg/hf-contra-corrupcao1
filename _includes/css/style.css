@@ -6,8 +6,8 @@
 	Project Name: SOLID - Bootstrap 3 Theme
 	Version: 1.0
 	URL: http://alvarez.is
-	
-################################################################# */ 
+
+################################################################# */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
@@ -16,15 +16,15 @@
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-	* { 
+	* {
 		margin: 0;
 		padding: 0px;
-	} 
+	}
 
-body { 
-	background: #ffffff; 
-	margin: 0; 
-	height: 100%; 
+body {
+	background: #ffffff;
+	margin: 0;
+	height: 100%;
 	color: {{ site.colors.secondary }};
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
@@ -35,15 +35,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-p { 
-	padding: 0; 
-	margin-bottom: 12px; 
+p {
+	padding: 0;
+	margin-bottom: 12px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 14px; 
+	font-size: 14px;
 	line-height: 24px;
-	color: {{ site.colors.secondary }}; 
-	margin-top: 10px; 
+	color: {{ site.colors.secondary }};
+	margin-top: 10px;
 }
 
 img {
@@ -61,11 +61,11 @@ ol {
     padding-left: 26px;
 }
 
-a { 
+a {
     color:{{ site.colors.link }};
     padding: 0;
 	margin: 0;
-	text-decoration: none; 
+	text-decoration: none;
 	-webkit-transition: background-color .4s linear, color .4s linear;
 	-moz-transition: background-color .4s linear, color .4s linear;
 	-o-transition: background-color .4s linear, color .4s linear;
@@ -79,14 +79,14 @@ a:focus {
 }
 
 ::-moz-selection  {
-	color: #fff;
+	color: {{ site.colors.link_hover }};
 	text-shadow:none;
-	background:{{ site.colors.secondary }};
+	background:{{ site.colors.link_hover }};
 }
 ::selection {
-	color: #fff;
+	color: {{ site.colors.link_hover }};
 	text-shadow:none;
-	background:{{ site.colors.secondary }};
+	background:{{ site.colors.link_hover }};
 }
 
 .centered {
@@ -118,11 +118,11 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.link_hover }};
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.link_hover }};
 	background-color: transparent;
 }
 
@@ -216,6 +216,8 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
+	background: url(../img/t-back.png) no-repeat center top;
+	background-size: cover;
 	background-color: {{ site.colors.primary }};
 	min-height: 0px;
 	padding-top: 100px;
@@ -237,34 +239,47 @@ a:focus {
 	margin: 0 auto;
 }
 
+.hackfest {
+	background-color: {{ site.colors.primary }};
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
 /* Services Wrap */
 #service {
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding: 65px 15px 65px 15px;
+	background-color: #9600ce;
+	color: #fff;
 }
 
 #service i {
-	color: {{ site.colors.primary }};
+	color: #fff;
 	font-size: 60px;
 	padding: 15px;
 }
 
+#service p {
+	color: #fff;
+	text-align: left;
+}
+
 /* Portfolio Wrap */
 #portfoliowrap {
-	padding-top: 60px;
-	margin-bottom: 60px;
 	display: block;
 	text-align: center
 }
 
 #portfoliowrap h3 {
-	margin-bottom: 25px;
+	margin: 0;
 }
 
 .portfolio {
 	padding:0 !important;
 	margin:0 !important;
 	display:block;
+	background-color: {{ site.colors.primary }}
 }
 
 
@@ -299,8 +314,7 @@ a:focus {
 
 /* Testimonials Wrap */
 #twrapback {
-    background-color: {{ site.colors.primary }};
-    background-color:rgba({{ site.colors.primary_rgb }},.8);
+    background-color: {{ site.colors.link_hover }};
     position: absolute;
     top: 0;
     left: 0;
@@ -309,16 +323,16 @@ a:focus {
 }
 
 #twrap {
-    background: url(../img/t-back.jpg) no-repeat center top;
+    background: url(../img/t-back.png) no-repeat center top;
     position: relative;
     margin-top: 0px;
 	padding-top:60px;
+	padding-bottom:60px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 450px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -332,26 +346,33 @@ a:focus {
 
 #twrap i {
 	font-size: 50px;
-	color: white;
+	color: {{ site.colors.primary }};
 	margin-bottom: 25px;
 }
 
 #twrap p {
-	color: white;
-	font-size: 15px;
+	color: {{ site.colors.primary }};
+	font-size: 24px;
 	line-height: 30px;
+}
+
+#twrap h3 {
+	color: {{ site.colors.primary }};
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	font-size: 24px;
 }
 
 /* clients logo */
 #cwrap {
 	background: #f7f7f7;
 	margin-top: 0px;
-	padding-top: 80px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 #cwrap h3 {
-	margin-bottom: 60px;
+	margin: 0;
 }
 
 /* Footer */
@@ -376,7 +397,7 @@ a:focus {
 }
 
 #footerwrap i:hover {
-	color: {{ site.colors.primary }}
+	color: {{ site.colors.link_hover }}
 }
 
 /*	################################################################
@@ -449,7 +470,7 @@ csmall {
 	background-position: center center;
 	min-height: 400px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -462,27 +483,27 @@ csmall {
 }
 
 /* Blog Page */
-.popular-posts { 
+.popular-posts {
 	margin: 0px;
 	padding-left: 0px;
 	}
-	
+
 .popular-posts li {
-	list-style: none; 
-	margin-bottom: 20px; 
+	list-style: none;
+	margin-bottom: 20px;
 	min-height: 70px;
 }
-.popular-posts li a, 
+.popular-posts li a,
 .popular-posts li a:hover {
-	color:#2f2f2f; 
+	color:#2f2f2f;
 	text-decoration: none;
 	}
-	
+
 .popular-posts li img {
-	float: left; 
+	float: left;
 	margin-right: 20px;
 	}
-	
+
 .popular-posts li em {
 	font-family: 'Lato', sans-serif;
 	font-size: 12px;
@@ -492,7 +513,7 @@ csmall {
 .popular-posts p {
 	line-height: normal;
 	margin-bottom: auto;
-}	
+}
 
 .share i {
 	padding-right: 15px;
@@ -500,8 +521,8 @@ csmall {
 }
 
 a.anchor{
-    display: block; 
-    position: relative; 
-    top: -80px; 
+    display: block;
+    position: relative;
+    top: -80px;
     visibility: hidden;
 }
