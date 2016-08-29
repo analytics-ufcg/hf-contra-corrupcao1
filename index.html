@@ -29,23 +29,4 @@ permalink: /
     </div><! --/container -->
 </div><! --/service -->
 
-{% include portfolio.html title="OS PROJETOS CRIADOS" limit=10 %}
-
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
-            <h4>Sobre essa iniciativa.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">Saiba mais</a></p>
-        </div>
-
-        <div class="col-lg-3 col-lg-offset-1">
-            <h4>Últimas novidades</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %}
-        </div>
-
-    </div><! --/row -->
-</div><! --/container -->
+{% include portfolio.html title="OS PROJETOS CRIADOS" limit=8 %}
