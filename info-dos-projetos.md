@@ -21,7 +21,7 @@ Quantos comissionados cabem em um metro quadrado?
 
 O que a Câmara Municipal de Campina Grande discute e aprova? *O que faz um vereador?* torna possível acompanhar a atuação da câmara em termos de volume de proposituras, temas e relevância do que é discutido (por exemplo, nomes de rua vs projetos de lei). É possível analisar esses aspectos tanto coletivamente quanto por vereador.
 
-*site:* Em construção.
+*url:* Em construção.
 
 *código:* https://github.com/antonioricardojr/vereador
 
@@ -45,3 +45,11 @@ O que a Câmara Municipal de Campina Grande discute e aprova? *O que faz um vere
 <img src="screenshots/obrago3.jpg" width="200">
 
 ---
+
+## Topa tudo
+
+Que empresas Topam Tudo? Olhamos dados de licitações para procurar empresas que fornecem serviços incompatíveis com sua competência ou com seu porte, empresas de competências muito divergentes e empresas que sempre competem juntas nas mesmas licitações.
+
+*url:* Em construção.
+
+*código:* https://github.com/talitalobo/topatudo
